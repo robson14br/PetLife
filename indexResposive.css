@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff9a6c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #263138;
+    padding: 24px 5%; /* Ajuste para ser relativo ao tamanho da tela */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav a {
+    color: #ffffff;
+    font-weight: 600;
+    padding: 16px; /* Reduzindo o padding para torná-lo mais compacto */
+    text-decoration: none;
+}
+
+section {
+    padding: 80px 5%; /* Ajuste para ser relativo ao tamanho da tela */
+}
+
+footer {
+    background-color: rgba(255, 152, 108, 0.25);
+    display: flex;
+    flex-wrap: wrap; /* Garante que os itens do rodapé se ajustem em telas menores */
+    justify-content: space-between;
+    gap: 24px; /* Ajuste o espaçamento entre os elementos */
+    padding: 32px 5%; /* Ajuste para ser relativo ao tamanho da tela */
+}
+
+footer nav a {
+    color: #263138;
+    text-decoration: none;
+}
+
+footer p a {
+    color: #263138;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 16px 5%; /* Ajuste para telas menores */
+    }
+
+    header nav a {
+        padding: 12px; /* Reduzindo o padding para torná-lo mais compacto */
+    }
+
+    section {
+        padding: 40px 5%; /* Ajuste para telas menores */
+    }
+
+    footer {
+        padding: 24px 5%; /* Ajuste para telas menores */
+    }
+}
