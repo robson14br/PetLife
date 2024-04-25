@@ -6,15 +6,19 @@
 }
 
 header { 
- background-color: #ff9a6c; 
- display: flex;
- align-items: center;
- justify-content: space-between;
- color: #263138;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(255, 155, 108); /* Cor do fundo com 70% de opacidade */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #263138;
     padding-left: 80px;
     padding-right: 80px;
     padding-top: 24px;
     padding-bottom: 24px;
+    z-index: 1000;
 }
 
 header nav a {
